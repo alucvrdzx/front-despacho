@@ -32,8 +32,8 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
         with:
-          context: ./front_despacho
-          file: ./front_despacho/Dockerfile
+          context: .
+          file: ./Dockerfile
           push: true
           tags: |
             juanvillagra/front-despacho:latest
