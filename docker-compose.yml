@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  frontend:
+    image: juanvillagra/front-despacho:latest
+    ports:
+      - "80:80"
+    restart: unless-stopped
+    environment:
+      - VITE_API_BASE=/api
